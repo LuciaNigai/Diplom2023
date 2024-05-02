@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+
+    <item android:title="@string/general">
+
+        <menu>
+
+            <group android:checkableBehavior="single">
+                <item android:title="@string/home"
+                    android:icon="@drawable/ic_baseline_home_24"
+                    android:id="@+id/nav_home"
+                    />
+
+                <item android:title="@string/profile"
+                    android:icon="@drawable/ic_baseline_person_24"
+                    android:id="@+id/nav_profile"/>
+            </group>
+        </menu>
+    </item>
+
+    <item android:title="@string/categories">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item android:title="@string/animals"
+                    android:icon="@drawable/ic_baseline_pets_24"
+                    android:id="@+id/nav_animals"/>
+                <item android:title="@string/medicine"
+                    android:icon="@drawable/ic_baseline_medical_services_24"
+                    android:id="@+id/nav_medicine"/>
+                <item android:title="@string/food"
+                    android:icon="@drawable/ic_baseline_food_bank_24"
+                    android:id="@+id/nav_food"/>
+                <item android:title="@string/nature"
+                    android:icon="@drawable/ic_baseline_nature_people_24"
+                    android:id="@+id/nav_nature"/>
+                <item android:title="@string/children"
+                    android:icon="@drawable/ic_baseline_child_friendly_24"
+                    android:id="@+id/nav_children"/>
+            </group>
+        </menu>
+    </item>
+
+    <item android:title="@string/profile">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item android:title="@string/logout_menuside"
+                    android:icon="@drawable/ic_baseline_logout_24"
+                    android:id="@+id/nav_logout"/>
+            </group>
+        </menu>
+    </item>
+
+</menu>

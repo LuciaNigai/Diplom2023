@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".AddCommentActivity">
+
+    <View
+        android:id="@+id/topView"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@color/default_blue"
+        >
+    </View>
+
+    <TextView
+        android:id="@+id/add_comment_part"
+        android:layout_width="150dp"
+        android:layout_height="30dp"
+        android:layout_below="@id/topView"
+        android:layout_marginTop="15dp"
+        android:text="Leave your comment"
+        android:textColor="@color/default_text_blue"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/white_background_profile"
+        />
+
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/add_comment"
+        android:layout_width="500dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="50dp"
+        android:gravity="center"
+        android:layout_below="@+id/add_comment_part"
+        android:ems="10"
+        android:inputType="text"
+        android:textSize="15dp"
+        android:textColor="@color/dark_grey"/>
+
+
+    <Button
+        android:id="@+id/add_comment_cancel"
+        android:layout_width="85dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginLeft="60dp"
+        android:backgroundTint="@color/light_blue"
+        android:gravity="center_horizontal"
+        android:layout_below="@id/add_comment"
+        android:text="Cancel"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="12dp" />
+
+    <Button
+        android:id="@+id/add_comment_OK"
+        android:layout_width="85dp"
+        android:layout_height="43dp"
+        android:layout_toEndOf="@id/add_comment_cancel"
+        android:layout_below="@id/add_comment"
+        android:layout_marginTop="60dp"
+        android:layout_marginLeft="110dp"
+        android:backgroundTint="@color/light_blue"
+        android:gravity="center_horizontal"
+        android:text="OK"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="12dp" />
+
+</RelativeLayout>

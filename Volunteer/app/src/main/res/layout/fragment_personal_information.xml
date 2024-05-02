@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PersonalInformationFragment"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/user_info"
+        android:layout_width="150dp"
+        android:layout_height="30dp"
+        android:gravity="center"
+        android:layout_marginTop="50dp"
+        android:text="User information"
+        android:textColor="@color/default_text_blue"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/white_background_profile"
+        />
+
+    <RelativeLayout
+        android:id="@+id/main_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/user_info"
+        android:layout_marginTop="70dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/personal_info_bcg"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/layout_name"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp">
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:text="User name"
+                android:textStyle="bold"
+                android:textSize="15dp"
+                android:layout_marginLeft="20dp"
+                android:textColor="@color/default_blue">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/user_name"
+                android:layout_width="160dp"
+                android:layout_height="20dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:text=""
+                android:textSize="15dp"/>
+            <Button
+                android:id="@+id/change_name_button"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginLeft="10dp"
+                android:text="Change"
+                android:backgroundTint="@color/light_blue"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:layout_below="@+id/layout_name"
+            >
+
+            <TextView
+                android:id="@+id/email"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_marginLeft="20dp"
+                android:text="User email"
+                android:textColor="@color/default_blue"
+                android:textStyle="bold"
+                android:textSize="15dp">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/user_email"
+                android:layout_width="160dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:text=""
+                android:textSize="15dp"/>
+
+            <Button
+                android:id="@+id/change_email_button"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginLeft="10dp"
+                android:text="Change"
+                android:backgroundTint="@color/light_blue"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_photo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:layout_below="@+id/layout_email"
+            android:layout_marginBottom="20dp"
+            >
+
+            <TextView
+                android:id="@+id/user_photo"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:text="User photo"
+                android:textColor="@color/default_blue"
+                android:textStyle="bold"
+                android:textSize="15dp">
+
+            </TextView>
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/imageView_profile"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginLeft="45dp"
+                android:elevation="3dp"
+                android:visibility="visible"
+                tools:src="@drawable/blankprofilepic" />
+
+            <Button
+                android:id="@+id/change_photo_button"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="20dp"
+                android:text="Change"
+                android:backgroundTint="@color/light_blue"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/go_back_button"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="500dp"
+        android:text="back"
+        android:gravity="center"
+        android:layout_marginLeft="150dp"
+        android:backgroundTint="@color/light_blue"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_below="@+id/main_layout"
+        android:layout_marginTop="130dp"
+        android:background="@drawable/wave__5_"/>
+
+
+</RelativeLayout>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ChangeUserNameFragment">
+
+    <TextView
+        android:id="@+id/change_user_name"
+        android:layout_width="150dp"
+        android:layout_height="30dp"
+        android:gravity="center"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="130dp"
+        android:text="User name"
+        android:textColor="@color/default_text_blue"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/white_background_profile"
+        />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/change_name"
+        android:layout_width="500dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginRight="50dp"
+        android:gravity="center"
+        android:layout_below="@+id/change_user_name"
+        android:ems="10"
+        android:inputType="text"
+        android:text="name"
+        android:textSize="15dp"
+        android:textColor="@color/dark_grey"/>
+
+
+    <Button
+        android:id="@+id/change_name_cancel"
+        android:layout_width="85dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginLeft="60dp"
+        android:backgroundTint="@color/light_blue"
+        android:gravity="center_horizontal"
+        android:layout_below="@id/change_name"
+        android:text="Cancel"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="12dp" />
+
+    <Button
+        android:id="@+id/change_name_OK"
+        android:layout_width="85dp"
+        android:layout_height="43dp"
+        android:layout_toEndOf="@id/change_name_cancel"
+        android:layout_below="@id/change_name"
+        android:layout_marginTop="60dp"
+        android:layout_marginLeft="110dp"
+        android:backgroundTint="@color/light_blue"
+        android:gravity="center_horizontal"
+        android:text="OK"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="12dp" />
+
+</RelativeLayout>

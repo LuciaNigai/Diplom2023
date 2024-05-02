@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ChangeUserPhotoFragment">
+
+    <TextView
+        android:id="@+id/change_user_photo"
+        android:layout_width="150dp"
+        android:layout_height="30dp"
+        android:gravity="center"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="130dp"
+        android:text="User photo"
+        android:textColor="@color/default_text_blue"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/white_background_profile"
+        />
+
+
+    <RelativeLayout
+        android:id="@+id/user_photo"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/change_user_photo">
+
+        <ImageView
+            android:id="@+id/user_change_image"
+            android:layout_width="300dp"
+            android:layout_height="200dp"
+            android:src="@drawable/blanc_post_pic"/>
+
+        <TextView
+            android:id="@+id/postImageText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/user_change_image"
+            android:layout_alignTop="@+id/user_change_image"
+            android:layout_alignRight="@+id/user_change_image"
+            android:layout_alignBottom="@+id/user_change_image"
+            android:gravity="center"
+            android:text="Upload image"
+            android:textColor="@color/default_text_blue"
+            android:textSize="20dp" />
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/change_photo_cancel"
+        android:layout_width="85dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginLeft="60dp"
+        android:backgroundTint="@color/light_blue"
+        android:gravity="center_horizontal"
+        android:layout_below="@id/user_photo"
+        android:text="Cancel"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="12dp" />
+
+    <Button
+        android:id="@+id/change_photo_OK"
+        android:layout_width="85dp"
+        android:layout_height="43dp"
+        android:layout_toEndOf="@id/change_photo_cancel"
+        android:layout_below="@id/user_photo"
+        android:layout_marginTop="60dp"
+        android:layout_marginLeft="110dp"
+        android:backgroundTint="@color/light_blue"
+        android:gravity="center_horizontal"
+        android:text="OK"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="12dp" />
+</RelativeLayout>
